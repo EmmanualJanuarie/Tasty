@@ -1,0 +1,185 @@
+/* setting the margin of the body  */
+body{
+    margin:0; 
+    background-color: whitesmoke;  
+}
+.navbar-top{
+  overflow: hidden;
+  background-color: #453436;
+}
+
+#logo{
+    font-family: 'Norican', cursive;
+    font-size: 30px;
+}
+
+/* Search inputfield */
+#SearchSec{
+  border:none;
+}
+
+/* disabling the border */
+#btnSearch{
+  border:1px solid black;
+
+  /* Adding a background to the icon "Search" */
+  background-color:#987654;
+  
+  /* Changing height of the button */
+  height: 0.3vh;
+
+  /* Adding border-radius of background */
+  border-radius:
+    0px 10px 10px 0px
+  ;
+
+  /* Positioning of the bacground */
+  position: relative;
+  top:20px;
+  right:20px;
+
+  /* Adding cursor effect  */
+  cursor: pointer;
+}
+
+/* Adding hover effect on search button */
+#btnSearch:hover{
+  background-color:#c19a6b;
+}
+
+/* Positioning of the Search icon */
+#btnSearch > span{
+  position: relative;
+  bottom:6px;
+}
+
+/* Sizing of the icon */
+.icon-size > span{
+  font-size: 20px;
+}
+
+/* Establishing the width of the card */
+.card{
+ background-color: white;
+ width: 60vw;
+ 
+ /* Positioning of the Outer div */
+position: relative;
+left:18%;
+height: 60vh;
+
+box-shadow:  0px 10px 10px gray;
+}
+
+.card-out{
+  background-color: #C1B5A9;
+  width: 59vw;
+  height:420px;
+  
+  
+  /* Positioning of the Outer div */
+  margin:10px;
+ box-shadow:  0px 5px 5px gray;
+}
+
+.card h2{
+  margin:10px;
+}
+
+.most-viewd{
+  background-color:white;
+  width: 9vw;
+  
+  /* Positioning of the Outer div */
+ position: relative;
+ left:2%;
+ 
+ height: 15 0px;
+ padding:20px;
+ top: 20px;
+ 
+ box-shadow:  0px 10px 10px gray;
+}
+
+
+button{
+  /* adding cursor effect to button */
+  cursor: pointer;
+  width: 100%;
+  height:35px;
+  background-color: blue;
+
+} 
+
+/* size od the input bar */
+form > input{
+  max-width:100%;
+  width:45vw;  
+
+  height:40px;
+
+  border-radius:
+    10px 0px 0px 10px
+  ;
+
+  border-color:  #453436;
+
+}
+
+.navbar-top a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding:20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* hover effect on the navbar-items */
+.navbar-top a:hover{
+    border:1px solid white;
+}
+
+.navbar-top a:active{
+    border: 1px solid orange;
+}
+
+/* ===========[Most viewed Column Section]=========== */
+.most-viewd{
+  float: left;
+  width: 18%;
+}
+
+/* Positioning of the beverage section of most viewed */
+#beverages{
+  position: relative;
+  left: 3%;
+}
+
+/* Positioning of the Poultry dishes section of most viewed */
+#poultry{
+  position: relative;
+  left: 6%;
+}
+
+/* Positioning of tHealthy section of most viewed */
+#healthy{
+  position: relative;
+  left:10%;
+}
+
+/* Filter icon positioning and styling */
+#filter{
+  position: relative;
+  left:2%;
+  bottom:5%;
+
+  /* Color of the icon */
+  color:grey;
+}
+
+/* Changing effect of icon when user hovers */
+#filter:hover{
+  color:orange;
+  cursor:pointer;
+}
