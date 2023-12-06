@@ -1,0 +1,144 @@
+/* =========================== [Styling font and text] ================================= */
+/* Changing the font-type of Main nav 'Tasty.' to cursive */
+.navbar-brand{
+  font-family: 'Norican', cursive;
+  font-size: 313px;
+}
+
+/* Changing the background-color of the navbar */
+.navbar{
+  background-color: #453436;
+}
+
+/* Changing the search button's background-color */
+button.btn{
+ background-color:#987654;
+}
+
+/* Re-sizing of the Tasty Logo */
+#logo{
+  font-size: 35px;
+}
+
+/* Changing color of the filter button in the filter card */
+#filterBtn{
+  background-color: lightgrey;
+}
+
+/* Adding a gif to make the fiter menu pop out */
+#filterCard{
+  background-image: url(/assets/falling_Food_Emojis.webp);
+
+  /* Disable visibility of the Filter Card */
+  display:none;
+}
+
+
+/* ============================= [Positioning and sizing of objects ] ================================*/
+/* Giving  all the the nav-items 70px of padding to the left  */
+li{
+  padding-left:70px;
+
+  /* Centering all nav-items */
+  text-align: center;
+}
+
+/* Changing the size of the nav item section for the search bar */
+#nav-item-search{
+  width:1000px;
+
+  position:relative;
+  top:10px;
+}
+
+/* Sizing of the cards */
+*{
+  box-sizing: border-box;
+}
+
+/* Providing the spacing and positioning of each column */
+div > .column{
+  float: left;
+  width: 25%;
+}
+
+/* Positioning the Most Viewed Card to a optimal position */
+.card.text-bg-light.mb-3{
+  max-width:60%; /* Set a 60% max width*/
+
+  /* Moving the Most viewed Card to the center of the html document */
+  position: relative;
+  left:20%; 
+
+  top:30px;
+}
+
+/* Positioning the Filter Icon */
+#filterIcon{
+  position: relative; /*-This will allow the object to be moved from it's actual html placement*/
+  left: 40px;
+  
+}
+
+/* Sizing of the filter options */
+.btn-group{
+  width: 200px;
+
+  /* Centering the objects */
+  position: relative;
+  left: 25px;
+}
+
+/*Moving the Button in the fiter card */
+#filterBtn{
+  position: relative;
+  top:10px;
+  left: 25px;
+
+  /* Chaning the size of the button's width */
+  width:100px;
+}
+
+/* Positionin of dropdown menu */
+ul.dropdown-menu.show{
+  position: relative;
+  top:900px;
+}
+
+
+
+/* ============================[ Psuedo elements and Pseudo classes of Objects ] ======================*/
+/* Proving a psuedo element to change to a differrent color*/
+button.btn:hover{
+  background-color: lightsalmon;
+}
+
+/* Establishing a hover element when user hovers over the tasty logo */
+#logo:hover{
+  color: #987654;
+}
+
+/* Providing a border  around the nav-items when the user hovers over any nav-item */
+.wh-border:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+/* Establishing a Psuedo element(hover) for the Filter icon*/
+#filterIcon:hover{
+  color: lightsalmon ;
+  cursor: pointer;
+}
+
+
+
+
+
+/* ========================== [Responsiveness ] =========================== */
+
+/* Rewsponsive layout when screen is less then 600px wide*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

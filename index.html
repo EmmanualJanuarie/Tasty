@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head lang="eng">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tasty.com</title>
+        <!-- Linking the styling for the css -->
+        <link rel="Stylesheet" href="/styles.css" type="text/css">
+
+        <!-- Link of Boostrap Styling  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!-- Text font for Tasty font logo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+
+        <!-- linking for the font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Sets FavIcon of Tasty -->
+        <link rel="icon" type="image/x-icon" href="/assets/food.ico">
+    </head>
+    <body>
+
+        <!-- ====Code for the Navbar==== -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#Main" style="color: white;"> <!--Changing tasty logo to white permanently-->
+                <span id="logo">Tasty.</span>
+            </a> 
+              <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Nav item for Delivery Location -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item" style="color: white;"> <!--Changing Dilvery button to white permanently-->
+                    
+                    <div class="wh-border">
+                            Delivery to <br>
+                        <span class="fa fa-map-marker"></span> location
+                    </div>
+                    </a>
+                  </li>
+
+                  <!-- Nav item for Search Bar-->
+                  <li class="nav-item" id="nav-item-search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                  </li>
+
+                     <!-- Nav item for Purchasing Food-->
+                  <li class="nav-item"> <!--Changing market button to white permanently-->
+                    <a class="nav-link" href="#Market" style="color: white;">
+                        <div class="wh-border">
+                                Market<br>
+                            <span class="fa fa-cart-plus"></span>
+                        </div>
+                        
+                    </a>
+                  </li>
+
+                   <!-- Nav item for Adding Recipe-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Add_Recipe" style="color: white;"> <!--Changing Add Recipes button  to white permanently-->
+                       <div class="wh-border">
+                            Add Recipes<br>
+                            <span class="fa fa-book"></span>
+                       </div>
+                    </a>
+                  </li>
+                
+                  <!-- Nav item for Returns and placed orders-->
+                  <li class="nav-item"> <!--Changing Returns and orders button to white permanently-->
+                    <a class="nav-link" href="#Returns_&_Orders" style="color: white;">
+                        <div class="wh-border">
+                                Returns &<br>
+                            <b>Orders</b>
+                        </div>
+                    </a>
+                  </li>
+
+                <!-- Nav item for Checking out placer order-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#checkout"a style="color: white;"> <!--Changing Checkout button  to white permanently-->
+                       <div class="wh-border">
+                            Checkout<br>
+                            <b><span class="fa fa-credit-card"></span></b>
+                       </div>
+                    </a>
+                  </li>
+
+                  <!-- Nav item for Added Account-->
+                  <li class="nav-item dropdown" > 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"> <!--Changing MyAccount Dropdown Menu to white permanently-->
+                     MyAccount
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#SingIn">SignIn</a></li>
+                      <li><a class="dropdown-item" href="#SignUp">SignUp</a></li>
+                    </ul>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ============================== [Section For most viewed Items]============================= -->
+          <div class="card text-bg-light mb-3" > <!--Provides the cards white color-->
+            <div class="card-header">   
+                <main><b>Most Viewed</b></main></div> <!--the heading of all the most viewed items-->
+
+                <!-- Items will be displayd for the cards body -->
+            <div class="card-body">
+              <p class="card-text">
+
+                <!-- =========== [Row of column]========== -->
+                <div class="row">
+
+                        <!-- ============[ First Column]========== -->
+                    <div class="column"> <!--This column is for Confectionaries-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="/assets/prev.jpg" class="card-img-top" alt="Defualt image is displayed">
+                            <div class="card-body">
+                                <h5 class="card-title">[Recipe Name]</h5>
+                                <p class="card-text">[Short Description]</p>
+                            </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Rating: [---]</li>
+                                    <li class="list-group-item">Category: [---]</li>
+                                    <li class="list-group-item">Posted By: [---]</li>
+                                </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">View</a>
+                                <a href="#" class="card-link">Download/Order</a>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- ============[ Second Column]========== -->
+                      <div class="column"> <!--This column is for Beverages-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="/assets/prev.jpg" class="card-img-top" alt="Defualt image is displayed">
+                            <div class="card-body">
+                                <h5 class="card-title">[Recipe Name]</h5>
+                                <p class="card-text">[Short Description]</p>
+                            </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Rating: [---]</li>
+                                    <li class="list-group-item">Category: [---]</li>
+                                    <li class="list-group-item">Posted By: [---]</li>
+                                </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">View</a>
+                                <a href="#" class="card-link">Download/Order</a>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- ============[ Third Column]========== -->
+                      <div class="column"> <!--This column is for Poultry-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="/assets/prev.jpg" class="card-img-top" alt="Defualt image is displayed">
+                            <div class="card-body">
+                                <h5 class="card-title">[Recipe Name]</h5>
+                                <p class="card-text">[Short Description]</p>
+                            </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Rating: [---]</li>
+                                    <li class="list-group-item">Category: [---]</li>
+                                    <li class="list-group-item">Posted By: [---]</li>
+                                </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">View</a>
+                                <a href="#" class="card-link">Download/Order</a>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- ============[ First Column]========== -->
+                      <div class="column"> <!--This column is for Healthy Food-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="/assets/prev.jpg" class="card-img-top" alt="Defualt image is displayed">
+                            <div class="card-body">
+                                <h5 class="card-title">[Recipe Name]</h5>
+                                <p class="card-text">[Short Description]</p>
+                            </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Rating: [---]</li>
+                                    <li class="list-group-item">Category: [---]</li>
+                                    <li class="list-group-item">Posted By: [---]</li>
+                                </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">View</a>
+                                <a href="#" class="card-link">Download/Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <!-- ============================== [Section For most Recipes]============================= -->
+          <div class="card text-bg-light mb-3"> <!--Provides the Card it white background Color-->
+            <div class="card-header">
+                <b>Recipes</b>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title"><span>All Recipes</span> <span class="fa fa-filter" id="filterIcon" title="filter..."></span></h5>
+                
+              <!--Can change based on the fitered option-->
+              <p class="card-text">
+                
+                <!--================== [ Adding the Card for the filterIcon ] ========================= -->
+                <div class="card" style="width: 18rem;" id="filterCard">
+                  <div class="card-body">
+
+                    <!-- ============== [ First DropDown ] =================== -->
+                    <div class="btn-group dropend">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Category
+                      </button>
+                      <ul class="dropdown-menu">
+
+                        <!-- Adding CheckBoxes for Display selected Recipes -->
+                        <form action="" method="">
+                          <input type="checkbox" name="Category">
+                          <label>Confectionaries</label>
+                          <hr>
+                          <input type="checkbox" name="Category">
+                          <label>Beverages</label>
+                          <hr>
+                          <input type="checkbox" name="Category">
+                          <label>Poultry</label>
+                          <hr>
+                          <input type="checkbox" name="Category">
+                          <label>Healthy Food</label>
+                          <hr>
+                          <input type="checkbox" name="Category">
+                          <label>Holiday Specials</label>
+                        </form>
+                      </ul>
+                    </div>
+
+                    <!-- ============== [ Second DropDown ] =================== -->
+                    <div class="btn-group dropend">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Rating
+                      </button>
+                      <ul class="dropdown-menu">
+                       
+                        <!-- Adding Radio Buttons for Display selected Rating -->
+                        <form action="" method="">
+                            <input type="radio" name="Rating">
+                            <label>High Rating</label>
+                            <hr>
+                            <input type="radio" name="Rating">
+                            <label>Low Rating</label>
+                        </form>
+                      </ul>
+                    </div>
+
+                    <!-- Adding button --><br>
+                    <button class="btn" type="submit" id="filterBtn">Filter</button>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+
+
+
+        <!-- Linking the external scripting to the html document -->
+        <script src="/scripts.js"></script>
+
+        <!-- Linking the external bootstrap scripting to the html document -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+<html>
