@@ -99,13 +99,11 @@ div > .column{
   width:100px;
 }
 
-/* Positionin of dropdown menu */
-ul.dropdown-menu.show{
+/* Positioning of the card links 'view and download' */
+.card-link{
   position: relative;
-  top:900px;
+  left: 50px;
 }
-
-
 
 /* ============================[ Psuedo elements and Pseudo classes of Objects ] ======================*/
 /* Proving a psuedo element to change to a differrent color*/
