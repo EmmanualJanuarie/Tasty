@@ -1,0 +1,1 @@
+<!-- The script allows data that has beenm entered in the "signUp form". To be transfered and stored into the database -->

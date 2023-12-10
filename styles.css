@@ -118,7 +118,7 @@ button.btn:hover{
 
 /* Providing a border  around the nav-items when the user hovers over any nav-item */
 .wh-border:hover{
-    border-bottom: 1px solid white;
+  color: #987654;
     cursor: pointer;
 }
 
