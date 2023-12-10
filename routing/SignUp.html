@@ -70,18 +70,19 @@
         <div class="card-body">
             <h2><b>SignUp</b></h2>
 
-            <form class="row" action="/includes/formhandler.inc.php" method="post">
+            <form class="row" method="POST" action="/includes/formhandler.inc.php">
                 <input type="text" class="form-control" name="username" placeholder="Username" required>
                 <input type="password" class="form-control" name="pwd" placeholder="Password" required>
                 <input type="email" class="form-control" name="email" placeholder="Email" required>
                 <button class="btn btn-secondary">Sign Up</button>
+                
                 <p id="user_agreement">
                     By Clicking the <b>Sign Up</b>button you agree to our <a href="...">Terms_and_Conditions</a> and <a href="...">Privacy_Policy</a>
                 </p>
             </form>
         </div>
     </div>
-    <span id="user_msg"><b>Already have an account?</b> <a href="/routing/Account/SignIn.html">Login Here</a></span> 
+    <span id="user_msg"><b>Already have an account?</b> <a href="/routing/SignIn.html">Login Here</a></span> 
     
 </body>
 </html>
